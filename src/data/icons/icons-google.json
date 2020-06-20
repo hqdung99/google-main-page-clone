@@ -1,0 +1,111 @@
+{
+  "google-icons-link": "https://ssl.gstatic.com/gb/images/p1_6269e604.png",
+  "account-cons": {
+    "name": "Account",
+    "url": "https://lh3.googleusercontent.com/ogw/ADGmqu8mz-du1n-f8XasBqi83lJj61DJCkVHmN2qhwU=s128-b16-cc-rp-mo"
+  },
+  "latitude-google-icons-group-1": [
+    {
+      "name": "Search",
+      "height": "138",
+      "link": "https://www.google.com.vn/"
+    },
+    {
+      "name": "Youtube",
+      "height": "1311",
+      "link": "https://www.youtube.com/"
+    },
+    {
+      "name": "Gmail",
+      "height": "483",
+      "link": "https://mail.google.com/"
+    },
+    {
+      "name": "Drive",
+      "height": "2277",
+      "link": "https://drive.google.com/"
+    },
+    {
+      "name": "Calendar",
+      "height": "2553",
+      "link": "https://calendar.google.com/"
+    },
+    {
+      "name": "Translate",
+      "height": "1242",
+      "link": "https://translate.google.com.vn/"
+    },
+    {
+      "name": "Photos",
+      "height": "621",
+      "link": "https://photos.google.com/"
+    },
+    {
+      "name": "Play",
+      "height": "207",
+      "link": "https://play.google.com/"
+    },
+    {
+      "name": "Meet",
+      "height": "2622",
+      "link": "https://meet.google.com/"
+    },
+    {
+      "name": "Dou",
+      "height": "897",
+      "link": "https://duo.google.com/"
+    }
+  ],
+  "latitude-google-icons-group-2": [
+    {
+      "name": "Docs",
+      "height": "2208",
+      "link": "https://docs.google.com/"
+    },
+    {
+      "name": "Contacts",
+      "height": "1863",
+      "link": "https://contacts.google.com/"
+    },
+    {
+      "name": "Hangouts",
+      "height": "2691",
+      "link": "https://hangouts.google.com/"
+    },
+    {
+      "name": "Classroom",
+      "height": "759",
+      "link": "https://classroom.google.com/"
+    },
+    {
+      "name": "Earth",
+      "height": "2760",
+      "link": "https://earth.google.com/"
+    },
+    {
+      "name": "Collections",
+      "height": "1932",
+      "link": "https://www.google.com.vn/save?authuser=0"
+    },
+    {
+      "name": "Sheets",
+      "height": "1035",
+      "link": "https://docs.google.com/spreadsheets/u/0/"
+    },
+    {
+      "name": "Jamboard",
+      "height": "690",
+      "link": "https://jamboard.google.com/"
+    },
+    {
+      "name": "Arts and Culture",
+      "height": "1587",
+      "link": "https://artsandculture.google.com/?hl=en-GB"
+    },
+    {
+      "name": "Slides",
+      "height": "276",
+      "link": "https://docs.google.com/presentation/u/0/"
+    }
+  ]
+}

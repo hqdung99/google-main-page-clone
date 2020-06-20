@@ -1,0 +1,70 @@
+@import "./constants/constants.scss";
+@import "./mixin/mixin.scss";
+
+.select-profile-infor-container-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  @include flex-center();
+
+  .select-profile-infor-container-buffer {
+    background-color: white;
+    width: 65%;
+    height: 85%;
+    min-width: 510px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    .close-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      @include flex-center();
+      cursor: pointer;
+      &:hover .close-icon {
+        color: rgb(107, 107, 107);
+      }
+    }
+
+    .title-select-profile-infor-container {
+      height: 70px;
+      display: flex;
+      padding-left: 40px;
+      .text {
+        @include flex-center();
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 18px;
+      }
+    }
+
+    .select-status-container {
+      height: 45px;
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #ccc;
+
+      .status {
+        cursor: pointer;
+        @include flex-center();
+        margin-left: 40px;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 15px;
+
+        &.active {
+          font-weight: bold;
+          border-bottom: 2px solid blue;
+        }
+      }
+    }
+
+    .choose-photos-component-container {
+      height: 68%;
+    }
+  }
+}
