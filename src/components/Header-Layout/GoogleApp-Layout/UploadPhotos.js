@@ -11,7 +11,11 @@ const START = "START";
 const UPLOADING = "UPLOADING";
 const DISPLAY = "DISPLAY";
 
-export const UploadPhotos = () => {
+export const UploadPhotos = ({
+  setProfilePhoto,
+  setActiveSetProfilePhoto,
+  setShowSelectProfileInfor,
+}) => {
   // show hight light when drag and drop image
   const [showHightLight, setShowHightLight] = useState(false);
   // value of progress bar
@@ -22,6 +26,17 @@ export const UploadPhotos = () => {
   const [source, setSource] = useState("");
   // width of image when you width to showImage status
   const [width, setWidth] = useState("100%");
+  // crop image bool
+  const [crop, setCrop] = useState(false);
+
+  // crop image - setAvatar
+  useEffect(() => {
+    if (setProfilePhoto) {
+      // crop image and set avatar.
+      setCrop(true);
+      // after that disappear select profile Infor
+    }
+  });
 
   // prevent Default
   const preventDefault = (event) => {
@@ -36,7 +51,6 @@ export const UploadPhotos = () => {
 
     const dropAreaHeight = document.getElementsByClassName("drop-area")[0]
       .offsetHeight;
-    console.log("dropArea", dropAreaHeight);
     const newWidth = (((imgWidth * dropAreaHeight) / imgHeight) * 80) / 100;
     setWidth(newWidth);
     return true;
@@ -51,19 +65,21 @@ export const UploadPhotos = () => {
 
   // setup before witch to preview mode
   const previewFile = (file) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onloadend = () => {
-      showImage(reader.result);
-      setSource(reader.result);
-    };
-
     setStatus(DISPLAY);
+    setActiveSetProfilePhoto(true);
   };
 
   // handle when you get files
   const handlesFiles = (files) => {
     const listFiles = [...files];
+
+    const reader = new FileReader();
+    reader.readAsDataURL(listFiles[0]);
+    reader.onloadend = () => {
+      showImage(reader.result);
+      setSource(reader.result);
+    };
+
     handleUpload(listFiles[0]);
   };
 
@@ -91,7 +107,6 @@ export const UploadPhotos = () => {
   // handle upload file to firebase
   const handleUpload = (file) => {
     setStatus(UPLOADING);
-    console.log("Haha");
     // Create a storage ref
     var storeRef = firebase.storage().ref("images/" + file.name);
 
@@ -176,7 +191,14 @@ export const UploadPhotos = () => {
           />
         )}
         {/* status === DISPLAY file={image}*/}
-        {status === DISPLAY && <ImageCrop source={source} width={width} />}
+        {status === DISPLAY && (
+          <ImageCrop
+            source={source}
+            width={width}
+            crop={crop}
+            setShowSelectProfileInfor={setShowSelectProfileInfor}
+          />
+        )}
       </div>
     </div>
   );

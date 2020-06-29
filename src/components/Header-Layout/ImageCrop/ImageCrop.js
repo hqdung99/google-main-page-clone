@@ -3,8 +3,20 @@ import "./ImageCrop.scss";
 import "cropperjs/dist/cropper.min.css";
 import Cropper from "react-cropper";
 
-export const ImageCrop = ({ source, width }) => {
+export const ImageCrop = ({
+  source,
+  width,
+  crop,
+  setShowSelectProfileInfor,
+}) => {
   const inputEl = useRef(null);
+
+  useEffect(() => {
+    if (crop) {
+      console.log("Set Avatar");
+      setShowSelectProfileInfor(false);
+    }
+  });
 
   //   const image = useRef(null);
   //   const [src, setSrc] = useState("");
@@ -33,9 +45,7 @@ export const ImageCrop = ({ source, width }) => {
             highlight={true}
             src={source}
             ready={() => {}}
-            crop={() => {
-              console.log("crop");
-            }}
+            crop={() => {}}
             ref={inputEl}
           />
         </div>

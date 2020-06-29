@@ -1,0 +1,57 @@
+.option-item-container {
+  //   border: 1px solid white;
+  color: white;
+  height: 50px;
+
+  .option-item-buffer {
+    // border: 1px solid brown;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    height: 68%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    transition: 0.1s all linear;
+
+    &.option-active {
+      background-color: rgba(66, 66, 66, 0.74);
+      color: rgb(119, 151, 255);
+    }
+
+    &:hover {
+      background-color: rgba(66, 66, 66, 0.74);
+    }
+
+    .option-icon {
+      //   border: 1px solid black;
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    .option-name {
+      //   border: 1px solid brown;
+      flex-grow: 2;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: "Segoe UI", "Roboto", arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: normal;
+      word-spacing: normal;
+      text-transform: none;
+      text-indent: 0px;
+      text-shadow: none;
+      font-style: normal;
+      font-variant-ligatures: normal;
+      font-variant-caps: normal;
+      font-variant-numeric: normal;
+      font-variant-east-asian: normal;
+      font-weight: 600;
+    }
+  }
+}

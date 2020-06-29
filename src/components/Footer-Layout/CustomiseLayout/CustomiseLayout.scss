@@ -1,0 +1,121 @@
+.customise-layout-overlay {
+  background-color: rgba(0, 0, 0, 0.288);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .customise-layout-container {
+    width: 800px;
+    height: 510px;
+    background-color: #292a2d;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+    .content-customise-container {
+      // border: 1px solid blue;
+      height: 458px;
+      display: flex;
+      flex-direction: row;
+
+      .option-bar-container {
+        // border: 1px solid brown;
+        display: flex;
+        flex-direction: column;
+        width: 225px;
+
+        .title-option-bar-container {
+          // border: 1px solid green;
+          height: 70px;
+        }
+
+        .content-option-bar-container {
+          // border: 1px solid green;
+          flex-grow: 1;
+        }
+      }
+      .display-content-container {
+        // border: 1px solid brown;
+        width: 575px;
+        display: flex;
+        flex-direction: column;
+
+        .title-content-container {
+          //   border: 1px solid green;
+          color: white;
+          display: flex;
+          align-items: center;
+          // padding-left: 20px;
+          font-family: "Segoe UI", "Roboto", arial, sans-serif;
+          font-size: 16px;
+          font-weight: 510;
+          height: 70px;
+
+          .back-to-customise {
+            // border: 1px solid black;
+            height: 30%;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            cursor: pointer;
+          }
+        }
+        .option-content-container {
+          // border: 1px solid green;
+          height: 388px;
+          overflow: hidden;
+        }
+      }
+    }
+
+    .button-customise-container {
+      border-top: 1px solid rgb(87, 87, 87);
+      flex-grow: 11;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+
+      .button {
+        background: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-size: 12px;
+        border: 0.8px solid #ccc;
+        font-weight: 700;
+        font-family: "Segoe UI", "Roboto";
+
+        &.cancel-button {
+          margin-right: 10px;
+          color: rgb(72, 165, 219);
+          border-color: rgb(87, 97, 99);
+          transition: 0.2s all linear;
+
+          &:hover {
+            background-color: rgba(72, 165, 219, 0.089);
+            border-color: rgb(113, 181, 221);
+          }
+        }
+        &.done-button {
+          margin-right: 20px;
+          color: rgb(68, 68, 68);
+          background-color: #8ab4f8;
+          border-color: #8ab4f8;
+          transition: 0.2s all linear;
+
+          &:hover {
+            box-shadow: 1px 1px 2px #8ab4f838;
+            background-color: #79acff;
+          }
+        }
+      }
+    }
+  }
+}

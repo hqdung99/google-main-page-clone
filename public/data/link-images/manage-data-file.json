@@ -1,0 +1,49 @@
+{
+  "list_data_content": [
+    {
+      "name_content": "Art",
+      "name_file": "art-small",
+      "url_image_example": "https://lh3.googleusercontent.com/proxy/pK9BFie7aBW2Byg3MGIWlib3mVR7di0hr0GWMaT6Udr805H3wARTvPdmMEifbLlaWibhZ4VnM1myLcf3ms3ckAB-WKlL-m5yA1hj=wWIDTH-hHEIGHT-p-k-no-nd-mv"
+    },
+    {
+      "name_content": "Cityscapes",
+      "name_file": "cityscapes-small",
+      "url_image_example": "https://lh3.googleusercontent.com/proxy/Azzno_p5uj0iOD1CuQxNUO0Q2f7KS963DQK1EiA7Pp-w6lhAeJmdJhoLMkJB-B6zq-bpXSUNzC6MoXV_CtAJlB73SF-LOAx3FnqLRg=wWIDTH-hHEIGHT-p-k-no-nd-mv"
+    },
+    {
+      "name_content": "Earth",
+      "name_file": "earth-small",
+      "url_image_example": "https://lh3.googleusercontent.com/proxy/BbpXvAdae7eyKzKDclWWfJMPZFuau0iVCj0l3I6kRjW09rBFVo6BgSPyVvUDtDgWRHMBEe1lZ_t8nmW9vHmUB_vIHn4roGrxqUp-kY4lWXMm=wWIDTH-hHEIGHT-p-k-no-nd-mv"
+    },
+    {
+      "name_content": "Geometric",
+      "name_file": "geometric-shapes-small",
+      "url_image_example": "https://lh3.googleusercontent.com/proxy/FWOBAVfQYasxV3KURX1VVKem1yOC2iazWAb8csOmqCDwI1CCzAA1zCpnAxR-wL2rbfZNcRHbI5b-SZfLASmF7uhJnzrksBWougEGlkw_-4U=wWIDTH-hHEIGHT-p-k-no-nd-mv"
+    },
+    {
+      "name_content": "Lanscapes",
+      "name_file": "lanscapes-small",
+      "url_image_example": "https://lh3.googleusercontent.com/proxy/nMIspgHzTUU0GzmiadmPphBelzF2xy9-tIiejZg3VvJTITxUb-1vILxf-IsCfyl94VSn6YvHa8_PiIyR9d3rwD8ZhNdQ1C1rnblP6zy3OaI=wWIDTH-hHEIGHT-p-k-no-nd-mv"
+    },
+    {
+      "name_content": "Life",
+      "name_file": "life-small",
+      "url_image_example": "https://lh3.googleusercontent.com/proxy/4Dl1eDkP9aq10-Zad9KJetOnLrrB59W2eOeRJOHzE8xcnJLUIt73W0MsLF7e9cj57GXa2Q5PyYS_SMsi4lWYe448bGT8vXcTq-BpVHMElhQ=wWIDTH-hHEIGHT-p-k-no-nd-mv"
+    },
+    {
+      "name_content": "Seascapes",
+      "name_file": "seascapes-small",
+      "url_image_example": "https://lh3.googleusercontent.com/proxy/7mMDT2L6mpyoeVzzc4MsZTWJDAJsJBqPt885Hrwv6yUYr4Zo7JYjgpi7KZe7uk1DHJi3XiiK6ZYkNCYBuHdvkkiP5AwjjqLNKgkAvw=wWIDTH-hHEIGHT-p-k-no-nd-mv"
+    },
+    {
+      "name_content": "Solid colours",
+      "name_file": "solid-color-small",
+      "url_image_example": "https://lh3.googleusercontent.com/proxy/Z01LhE09QpnbamA90jj2rQWpm0vNgQek7fPriQZszZPXqXkqzhYKY2kIc0BTkGT2T4uh2kibyBq_ybLu2hqRu19vn5xNP1BOcApi=wWIDTH-hHEIGHT-p-k-no-nd-mv"
+    },
+    {
+      "name_content": "Textures",
+      "name_file": "textures-small",
+      "url_image_example": "https://lh3.googleusercontent.com/proxy/vf5k8qly9U_J9kffY_wIw6irCziEfkBWfHXczB1zZz1VMHOdej42kDXtIcDribO8PFS7xuQN1982z73YlSy2vEIz35BFfyXqAQ=wWIDTH-hHEIGHT-p-k-no-nd-mv"
+    }
+  ]
+}

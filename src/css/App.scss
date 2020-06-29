@@ -15,6 +15,7 @@ body {
 #root {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 // Container All
 .container-all {
@@ -25,102 +26,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  // Header
-  .container-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: $height-header;
-    align-items: center;
-    padding: 5px auto;
-    position: relative;
-
-    .header-item {
-      height: 100%;
-      margin: auto 8px;
-      @include flex-center();
-
-      a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 13px;
-        font-weight: 600;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-
-    .container-google-apps-expand-icon {
-      @include flex-center();
-      padding: 4px;
-
-      .google-apps-round {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        cursor: pointer;
-        @include flex-center();
-        transition: $quick-transition;
-        position: relative;
-
-        &:hover {
-          background-color: #ffffff1a;
-        }
-
-        @include title-hover(-50%);
-
-        .image-container {
-          background-image: url("../images/svg-file/google-apps.svg");
-          background-size: initial;
-          background-repeat: no-repeat;
-          width: 27px;
-          height: 27px;
-          color: green($color: #000000);
-        }
-      }
-    }
-
-    .container-google-account-expand-icon {
-      @include flex-center();
-      padding: 4px;
-
-      .google-account-round {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        cursor: pointer;
-        @include flex-center();
-        transition: $quick-transition;
-        position: relative;
-
-        &:hover {
-          background-color: #ffffff1a;
-        }
-
-        @include title-hover(-300%);
-
-        .image-container {
-          background-image: url("https://lh3.googleusercontent.com/ogw/ADGmqu8mz-du1n-f8XasBqi83lJj61DJCkVHmN2qhwU=s32-c-mo");
-          background-size: cover;
-          background-repeat: no-repeat;
-          width: 27px;
-          height: 27px;
-          color: green($color: #000000);
-          border-radius: 50%;
-        }
-      }
-    }
-
-    .container-google-apps-container {
-      position: absolute;
-    }
-  }
-
-  // Content
-  .container-content {
-    border: 1px solid green;
-  }
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
